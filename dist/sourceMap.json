@@ -1,0 +1,21 @@
+{
+  "music": "https://cdn.jsdelivr.net/gh/SharpDotNUT/yunhan-toolbox-meta-data/dist/music/music.json",
+  "achievement": {
+    "CHS": "https://cdn.jsdelivr.net/gh/SharpDotNUT/yunhan-toolbox-meta-data/dist/achievement/CHS.json",
+    "CHT": "https://cdn.jsdelivr.net/gh/SharpDotNUT/yunhan-toolbox-meta-data/dist/achievement/CHT.json",
+    "EN": "https://cdn.jsdelivr.net/gh/SharpDotNUT/yunhan-toolbox-meta-data/dist/achievement/EN.json",
+    "JP": "https://cdn.jsdelivr.net/gh/SharpDotNUT/yunhan-toolbox-meta-data/dist/achievement/JP.json"
+  },
+  "gacha": {
+    "CHS": "https://cdn.jsdelivr.net/gh/SharpDotNUT/yunhan-toolbox-meta-data/dist/gacha/CHS.json",
+    "CHT": "https://cdn.jsdelivr.net/gh/SharpDotNUT/yunhan-toolbox-meta-data/dist/gacha/CHT.json",
+    "EN": "https://cdn.jsdelivr.net/gh/SharpDotNUT/yunhan-toolbox-meta-data/dist/gacha/EN.json",
+    "JP": "https://cdn.jsdelivr.net/gh/SharpDotNUT/yunhan-toolbox-meta-data/dist/gacha/JP.json"
+  },
+  "map": {
+    "CHS": "https://cdn.jsdelivr.net/gh/SharpDotNUT/yunhan-toolbox-meta-data/dist/map/CHS.json",
+    "CHT": "https://cdn.jsdelivr.net/gh/SharpDotNUT/yunhan-toolbox-meta-data/dist/map/CHT.json",
+    "EN": "https://cdn.jsdelivr.net/gh/SharpDotNUT/yunhan-toolbox-meta-data/dist/map/EN.json",
+    "JP": "https://cdn.jsdelivr.net/gh/SharpDotNUT/yunhan-toolbox-meta-data/dist/map/JP.json"
+  }
+}

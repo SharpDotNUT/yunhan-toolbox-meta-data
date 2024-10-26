@@ -1,7 +1,8 @@
 
 import fs from "fs";
 import path from "path";
-
+import { addInSourceMap } from "../utils.mjs";
+const __dirname = import.meta.dirname
 // 定义API主机地址
 const apiHost = "http://localhost:3000";
 
@@ -111,7 +112,7 @@ async function nextReduce() {
   });
   fs.mkdirSync(path.join(__dirname, "../../dist/musics"), { recursive: true });
   fs.writeFileSync(
-    path.join(__dirname, "../../dist/musics/songs.json"),
+    path.join(__dirname, "../../dist/music/music.json"),
     JSON.stringify(
       {
         update: new Date().getTime(),
@@ -120,13 +121,13 @@ async function nextReduce() {
       null,
       2
     )
-  );
+  )
+  
 }
 
+console.log(`Music - 开始`);
 getRawData();
+console.log(`Music - 网络部分已完成`);
 nextReduce();
-
-export default ()=>{
-  getRawData()
-  nextReduce()
-}
+addInSourceMap('music')
+console.log(`Music - 全部完成`);

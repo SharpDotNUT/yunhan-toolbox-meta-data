@@ -1,8 +1,9 @@
 import fs from "fs";
 import path from "path";
-import { SupportLanguages } from "../utils.mjs";
+import { SupportLanguages,addInSourceMap } from "../utils.mjs";
 const __dirname = import.meta.dirname;
 
+console.log(`Gacha - 开始`);
 for (const lang of SupportLanguages) {
   let rawData = JSON.parse(
     fs.readFileSync(
@@ -49,4 +50,7 @@ for (const lang of SupportLanguages) {
       2
     )
   );
+  addInSourceMap('gacha',lang)
+  console.log(`Gacha - ${lang}'完成`);
 }
+console.log(`Gacha - 全部完成`);

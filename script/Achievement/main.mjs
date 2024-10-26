@@ -1,7 +1,8 @@
 import path from "path";
 import fs from "fs";
 import { SupportLanguages } from "../utils.mjs";
-
+import { addInSourceMap } from "../utils.mjs";
+console.log("Achievement - 开始");
 for (const lang of SupportLanguages) {
   // 读取成就数据文件
   const rawAchievementData = JSON.parse(
@@ -101,7 +102,9 @@ for (const lang of SupportLanguages) {
     });
   }
 
-  fs.mkdirSync(path.join(import.meta.dirname, "../../dist/achievement/"),{recursive: true});
+  fs.mkdirSync(path.join(import.meta.dirname, "../../dist/achievement/"), {
+    recursive: true,
+  });
   fs.writeFileSync(
     path.join(import.meta.dirname, `../../dist/achievement/${lang}.json`),
     JSON.stringify(
@@ -117,4 +120,8 @@ for (const lang of SupportLanguages) {
     ),
     "utf8"
   );
+  addInSourceMap('achievement', lang);
+  console.log(`Achievement - ${lang}'完成`);
 }
+
+console.log(`Achievement - 全部完成`);;
